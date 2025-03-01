@@ -2,7 +2,7 @@ package practice_5.zoo;
 
 public class Main{
     public static void main(String[] args) {
-        Zoo newZoo = new Zoo();
+        Dispatcher newZoo = new Dispatcher();
 
         Animal elephant = new Elephant("Слон");
         Animal bird = new Bird("Птица");
