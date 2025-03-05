@@ -7,6 +7,10 @@ public abstract class  Pet {
        this.pet = pet;
    }
 
+   public String getPet() {
+      return this.pet;
+   }
+
    abstract void play();
    abstract void feed();
    abstract void walking();
