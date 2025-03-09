@@ -1,35 +1,20 @@
 package practice_5.RestaurantControl;
 
 public abstract class Meal {
-    private String mealName;
-    private float volume;
-    private float temperature;
+    private String name;
+    private float price;
 
-    public Meal(String mealName) {
-        this.mealName = mealName;
-    }
-
-    protected Meal() {
+    public Meal(String name, float price) {
+        this.name = name;
+        this.price = price;
     }
 
     public String getMealName() {
-        return this.mealName;
+        return this.name;
     }
 
-    public float getVolume() {
-        return this.volume;
-    }
-
-    public float getTemperature() {
-        return this.temperature;
-    }
-
-    public void setTemperature(float temperature) {
-        this.temperature = temperature;
-    }
-
-    public void setVolume(float volume) {
-        this.volume = volume;
+    public float getPrice() {
+        return this.price;
     }
 
     abstract void getDescription();

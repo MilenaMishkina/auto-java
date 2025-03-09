@@ -2,18 +2,18 @@ package practice_5.RestaurantControl;
 
 public class Main {
     public static void main(String[] args) {
-        Meal drink = new Cola("Coco-cola");
-        Meal hotMeal = new Potato("Жареная картошка");
-        drink.setVolume(200);
-        hotMeal.setTemperature(180);
+        HotMeal potato = new HotMeal("Картошка фри", 300, 100);
+        Drinks cola = new Drinks("Кока-кола", 100, 250);
 
         Restaurant rest = new Restaurant();
 
-        rest.addMeal(drink);
-        rest.addMeal(hotMeal);
+        rest.showMenu();
 
-        rest.info(drink);
-        rest.info(hotMeal);
-        rest.menu();
+        rest.addMeal(potato);
+        rest.addMeal(cola);
+
+        rest.showMenu();
+        rest.getInfo(potato);
+        rest.getInfo(cola);
     }
 }
