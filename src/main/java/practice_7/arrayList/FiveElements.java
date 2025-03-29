@@ -3,17 +3,16 @@ package practice_7.arrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayListFiveElements {
+public class FiveElements {
     private ArrayList<Integer> intList;
 
-    public ArrayListFiveElements() {
+    public FiveElements() {
         this.intList = new ArrayList<>(5);
     }
 
     public void fillList() {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Введите до 5 чисел:");
+        System.out.println("Введите 5 чисел: ");
 
         for (int i = 0; i < 5; i++) {
             try {
@@ -27,12 +26,12 @@ public class ArrayListFiveElements {
         }
     }
 
-    public void add(int value){
-        System.out.println("Добавляю значение " + value + " конец списка");
+    public void add(int value) {
+        System.out.println("Добавляю значение: " + value + " в конец списка");
         intList.add(value);
     }
 
     public void getList() {
-        System.out.println("Список:" + intList);
+        System.out.println("Список: " + intList);
     }
 }

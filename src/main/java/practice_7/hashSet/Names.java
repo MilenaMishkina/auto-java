@@ -1,36 +1,37 @@
 package practice_7.hashSet;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Names {
-    HashSet<String> names;
-     public Names() {
-         this.names = new HashSet<>();
-     }
 
-     public void getNames() {
-         System.out.println("Список имен: " + names);
-     }
+    private HashSet<String> names;
+    public Names() {
+        this.names = new HashSet<>();
+    }
 
-     public void addNames() {
-         System.out.println("Введите жедаемое количество имен для добавления:");
-         Scanner scaner = new Scanner(System.in);
-         int namesAmount = scaner.nextInt();
+    public void getNames() {
+        System.out.println("List of names: " + names);
+    }
 
-         System.out.println("Введите имена в количестве: " + namesAmount);
-         for(int i = 1; i <= namesAmount; i++) {
-            String name = scaner.next();
-             names.add(name);
-         }
-     }
+    public void addNames() {
+        System.out.println("Enter how many names do you want to add: ");
+        Scanner scanner = new Scanner(System.in);
+        int namesAmount = scanner.nextInt();
 
-     public void checkNameContainsInList(String expectedName) {
-         if (names.contains(expectedName)) {
-             System.out.println("Имя: " + expectedName + " содержится в списке");
-         } else {
-             System.out.println("Имя: " + expectedName + " не содержится в списке");
-         }
-     }
+        System.out.println("Enter names");
+        for(int i = 1; i <= namesAmount; i++) {
+            String name = scanner.next();
+            names.add(name);
+        }
+    }
+
+    public void checkSetContainsName(String expectedName) {
+        if (names.contains(expectedName)) {
+            System.out.println("Name: " + expectedName + " contains in names set");
+        } else {
+            System.out.println("Name: " + expectedName + " is NOT contains in names set");
+        }
+    }
 }

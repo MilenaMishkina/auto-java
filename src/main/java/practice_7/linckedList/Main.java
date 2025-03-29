@@ -2,18 +2,17 @@ package practice_7.linckedList;
 
 public class Main {
     public static void main(String[] args) {
+//        TaskQueue queue = new TaskQueue();
+//         queue.getTasksList();
+//         queue.processQueue();
+//
+//         queue.addTasks();
+//         queue.getTasksList();
+//         queue.processQueue();
 
-        TaskQueue tasksList = new TaskQueue();
+        ListIteratorTask list2 = new ListIteratorTask();
 
-        tasksList.getTasksList();
-        tasksList.processQueue();
-
-        tasksList.addTasks();
-        tasksList.processQueue();
-
-
-        ListIteratorTask list = new ListIteratorTask();
-        list.iterateNext();
-        list.iteratePrevious();
+        list2.iterateNext();
+        list2.iteratePrevious();
     }
 }

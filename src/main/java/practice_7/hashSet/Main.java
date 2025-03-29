@@ -6,18 +6,16 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Names list1 = new Names();
+//        RemoveDuplicates list1 = new RemoveDuplicates();
+//        List<String> listWithDuplicates = Arrays.asList("apple", "banana", "lemon", "apple");
+//        Set<String> result = list1.removeDuplicates(listWithDuplicates);
+//        System.out.println("Уникальные значения: " + result);
 
-        list1.getNames();
-        list1.addNames();
-        list1.getNames();
-        list1.checkNameContainsInList("Маша");
-        list1.checkNameContainsInList("Даша");
-
-        UniqueSet list2 = new UniqueSet();
-        List<String> listWithDuplicates = Arrays.asList("apple", "banana", "apple", "orange", "banana");
-
-        Set<String> result = list2.removeDuplicates(listWithDuplicates);
-        System.out.println("Уникальные элементы: " + result);
+        Names setNames = new Names();
+        setNames.getNames();
+        setNames.addNames();
+        setNames.getNames();
+        setNames.checkSetContainsName("Masha");
+        setNames.checkSetContainsName("Dasha");
     }
 }

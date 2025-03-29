@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class UniqueSet {
+public class RemoveDuplicates {
 
     public Set<String> removeDuplicates(List<String> input) {
         Set<String> uniqueSet = new HashSet<>();

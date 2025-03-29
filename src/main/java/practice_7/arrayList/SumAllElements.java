@@ -11,13 +11,12 @@ public class SumAllElements {
     }
 
     public void fillList() {
-        System.out.println("Введите желаемое количество элементов в списке:");
+        System.out.println("Введите желаемое количество элементов в списке: ");
         Scanner scanner = new Scanner(System.in);
         int valueAmount = scanner.nextInt();
 
-        System.out.println("Введите до" + valueAmount + "чисел");
-
-        for (int i = 0; i < valueAmount; i++) {
+        System.out.println("Введите " + valueAmount + " чисел");
+        for (int i = 1;  i <= valueAmount; i++) {
             try {
                 int number = scanner.nextInt();
                 intList.add(number);
@@ -31,13 +30,13 @@ public class SumAllElements {
 
     public void sum() {
         int result = 0;
-        for (Integer i : intList) {
+        for(Integer i : intList) {
             result += i;
         }
         System.out.println("Сумма значений в списке равна: " + result);
     }
 
     public void getList() {
-        System.out.println("Список:" + intList);
+        System.out.println("Список: " + intList);
     }
 }

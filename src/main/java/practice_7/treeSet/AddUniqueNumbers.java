@@ -5,22 +5,22 @@ import java.util.TreeSet;
 
 public class AddUniqueNumbers {
 
-    public void addNumbers(TreeSet<Integer> list) {
+    public void addNumbers(TreeSet<Integer> intSet) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите желаемое количество значений в списке: ");
         int numsAmount = scanner.nextInt();
 
-        while (list.size() < numsAmount) {
+        while(intSet.size() < numsAmount) {
             System.out.println("Введите значение: ");
             int newValue = scanner.nextInt();
 
-            if(list.contains(newValue)) {
-                System.out.println("Значение: " + newValue+ " уже добавлено в список.");
+            if(intSet.contains(newValue)) {
+                System.out.println("Значение " + newValue + " уже добавлено в список");
             } else {
-                list.add(newValue);
-                System.out.println("Значение: " + newValue + " добавлено в список");
+                intSet.add(newValue);
+                System.out.println("Значение " + newValue + " добавлено в список");
             }
         }
-        System.out.println("Итоговый список: "+ list) ;
+        System.out.println("Итоговое множество: " + intSet);
     }
 }

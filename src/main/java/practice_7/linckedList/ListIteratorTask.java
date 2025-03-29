@@ -5,14 +5,13 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class ListIteratorTask {
-    LinkedList<String> listOfValues;
-    ListIterator<String> iterator;
+    private LinkedList<String> list;
+    private ListIterator<String> iterator;
 
     public ListIteratorTask() {
-        this.listOfValues = new LinkedList<>(Arrays.asList("A", "B", "C"));
-        this.iterator = listOfValues.listIterator();
+        this.list = new LinkedList<>(Arrays.asList("A", "B", "C"));
+        this.iterator = list.listIterator();
     }
-
 
     public void iterateNext() {
         while (iterator.hasNext()) {

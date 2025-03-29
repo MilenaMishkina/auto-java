@@ -4,18 +4,24 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class IntegerQueue {
-    public void addTasks(PriorityQueue<Integer> queue) {
-        System.out.println("Добавьте 5 чисел в очередь");
+    private PriorityQueue<Integer> queue;
+
+    public IntegerQueue() {
+        this.queue = new PriorityQueue<>(5);
+    }
+
+    public void addTasks() {
+        System.out.println("Добавьте 5 задач в очередь");
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i <= 5; i++) {
-            Integer value = scanner.nextInt();
-            queue.add(value);
+            Integer task = scanner.nextInt();
+            queue.add(task);
         }
     }
 
-    public void getTasks(PriorityQueue<Integer> queue) {
-        while (!queue.isEmpty()) {
+    public void getTasks() {
+        while(!queue.isEmpty()) {
             System.out.println(queue.poll());
         }
     }
