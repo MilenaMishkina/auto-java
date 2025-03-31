@@ -9,12 +9,12 @@ public class Pair <T, U> {
         this.second = second;
     }
 
-    public T getFirst() {
-        return first;
+    public void setFirst(T item) {
+        this.first = item;
     }
 
-    public void setFirst(T first) {
-        this.first = first;
+    public T getFirst() {
+        return first;
     }
 
     public U getSecond() {
@@ -23,5 +23,16 @@ public class Pair <T, U> {
 
     public void setSecond(U second) {
         this.second = second;
+    }
+
+    public static void main(String[] args) {
+        Pair <String, Integer> pair = new Pair<>("Masha", 20);
+        System.out.println(pair.getFirst());
+        System.out.println(pair.getSecond());
+
+        pair.setFirst("Dasha");
+        pair.setSecond(25);
+        System.out.println(pair.getFirst());
+        System.out.println(pair.getSecond());
     }
 }
